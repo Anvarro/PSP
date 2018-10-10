@@ -1,0 +1,172 @@
+import java.util.*;
+public class DNI {
+
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		String nif, numeros;
+		int numNif, resto;
+		char letra;
+		boolean comprobar = false;
+		
+		System.out.println("Dime tu DNI");
+		nif = teclado.next();
+		
+		numeros = nif.substring(0, nif.length()-1);
+		letra = nif.charAt(8);
+		
+		numNif = Integer.parseInt(numeros) ;
+		
+		resto = numNif % 23;
+		
+		switch (resto) {
+		
+		case 0:
+			if (letra == 'T') {
+				comprobar = true;
+			}
+			break;
+			
+		case 1:
+			if (letra == 'R') {
+				comprobar = true;
+			}
+			break;
+		
+		case 2:
+			if (letra == 'W') {
+				comprobar = true;
+			}
+			break;
+			
+		case 3:
+			if (letra == 'A') {
+				comprobar = true;
+			}
+			break;
+			
+		case 4:
+			if (letra == 'G') {
+				comprobar = true;
+			}
+			break;
+			
+		case 5:
+			if (letra == 'M') {
+				comprobar = true;
+			}
+			break;
+			
+		case 6:
+			if (letra == 'Y') {
+				comprobar = true;
+			}
+			break;
+			
+		case 7:
+			if (letra == 'F') {
+				comprobar = true;
+			}
+			break;
+			
+		case 8:
+			if (letra == 'P') {
+				comprobar = true;
+			}
+			break;
+			
+		case 9:
+			if (letra == 'D') {
+				comprobar = true;
+			}
+			break;
+			
+		case 10:
+			if (letra == 'X') {
+				comprobar = true;
+			}
+			break;
+			
+		case 11:
+			if (letra == 'B') {
+				comprobar = true;
+			}
+			break;
+			
+		case 12:
+			if (letra == 'N') {
+				comprobar = true;
+			}
+			break;
+			
+		case 13:
+			if (letra == 'J') {
+				comprobar = true;
+			}
+			break;
+			
+		case 14:
+			if (letra == 'Z') {
+				comprobar = true;
+			}
+			break;
+			
+		case 15:
+			if (letra == 'S') {
+				comprobar = true;
+			}
+			break;
+			
+		case 16:
+			if (letra == 'Q') {
+				comprobar = true;
+			}
+			break;
+			
+		case 17:
+			if (letra == 'V') {
+				comprobar = true;
+			}
+			break;
+			
+		case 18:
+			if (letra == 'H') {
+				comprobar = true;
+			}
+			break;
+			
+		case 19:
+			if (letra == 'L') {
+				comprobar = true;
+			}
+			break;
+			
+		case 20:
+			if (letra == 'C') {
+				comprobar = true;
+			}
+			break;
+			
+		case 21:
+			if (letra == 'K') {
+				comprobar = true;
+			}
+			break;
+			
+		case 22:
+			if (letra == 'E') {
+				comprobar = true;
+			}
+			break;
+		}
+		
+		if(comprobar == true) {
+			System.out.println("Tu DNI es correcto");
+		}
+		else {
+			System.out.println("Tu DNI es incorrecto");
+		}
+	}
+
+}
