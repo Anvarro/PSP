@@ -1,5 +1,4 @@
 
-```java
 public class Main_ej3 {
 
 	public static void main(String[] args) {
@@ -17,7 +16,7 @@ public class Main_ej3 {
 	}
 
 }
-```
+
 
 #public class empleado {
 	
